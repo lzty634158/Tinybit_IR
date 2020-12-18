@@ -1,0 +1,29 @@
+{
+    "name": "Tinybit_IR",
+    "version": "1.0.0",
+    "description": "Extension for YahBoom Tinybit_IR V1.0.0",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "MbitIR.ts",
+        "enums.d.ts",
+        "Mbit_IR.cpp",
+        "ReceiverIR.cpp",
+        "ReceiverIR.h",
+        "RemoteIR.h",
+        "_locales/zh-cn/Mbit_IR-strings.json",
+        "_locales/zh-tw/Mbit_IR-strings.json",
+        "shims.d.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}

@@ -1,0 +1,32 @@
+{
+
+    "Mbit_IR.init|block": "連接紅外接收器到引腳 %pin",
+    "Mbit_IR.onPressEvent|block": "當按鈕 |%btn| 被按下時",
+
+    "MbitIR.IR_readV2|block": "紅外的值",
+    "MbitIR.IR_callbackUserV2|block": "當接收到紅外時運行(V2)",
+    "MbitIR.IR_KeyValue|block": "紅外鍵值|%value",
+
+    "MbitIR.enIRButton.Power|block": "電源",
+    "MbitIR.enIRButton.Up|block": "上",
+    "MbitIR.enIRButton.Light|block": "燈",
+    "MbitIR.enIRButton.Left|block": "左",
+    "MbitIR.enIRButton.Beep|block": "鳴笛",
+    "MbitIR.enIRButton.Right|block": "右",
+    "MbitIR.enIRButton.SpinLeft|block": "左旋",
+    "MbitIR.enIRButton.Down|block": "下",
+    "MbitIR.enIRButton.SpinRight|block": "右旋",
+    "MbitIR.enIRButton.Add|block": "加",
+    "MbitIR.enIRButton.Zero|block": "0",
+    "MbitIR.enIRButton.Minus|block": "減",
+    "MbitIR.enIRButton.One|block": "1",
+    "MbitIR.enIRButton.Two|block": "2",
+    "MbitIR.enIRButton.Three|block": "3",
+    "MbitIR.enIRButton.Four|block": "4",
+    "MbitIR.enIRButton.Five|block": "5",
+    "MbitIR.enIRButton.Six|block": "6",
+    "MbitIR.enIRButton.Seven|block": "7",
+    "MbitIR.enIRButton.Eight|block": "8",
+    "MbitIR.enIRButton.Nine|block": "9",
+
+}
