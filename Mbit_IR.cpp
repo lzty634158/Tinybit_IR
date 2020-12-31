@@ -1,3 +1,9 @@
+/**
+ * Mbit_IR (Version 2.0.0)
+ *
+ * Copyright (C) 2020 Yahboom
+ * 
+ */
 #include "pxt.h"
 #include <map>
 #include <vector>

@@ -1,11 +1,8 @@
 
 
 //% weight=10 color=#008B00 icon="\uf1eb" block="Tinybit_IR_V2"
-//% groups=['micro:bit(V2)']
 namespace MbitIR {
     
-
-
     let irstate:number;
     let state:number;
     
@@ -86,7 +83,7 @@ namespace MbitIR {
     export function IR_callbackUserV2(cb: (message: number) => void) {
         state = 1;
         control.onEvent(11, 22, function() {
-            cb(irstate)
+            cb(irstate);
         }) 
     }
 
@@ -124,7 +121,7 @@ namespace MbitIR {
         if(state == 1){
             irstate = valuotokeyConversion();
             if(irstate != -1){
-                control.raiseEvent(11, 22)
+                control.raiseEvent(11, 22);
             }
         }
         
