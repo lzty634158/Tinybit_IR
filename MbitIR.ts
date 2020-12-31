@@ -68,7 +68,6 @@ namespace MbitIR {
     }
 
     //% weight=5
-    //% group="micro:bit(V2)"
     //% blockId=IR_KeyValue block="IR_KeyValue|value %value"
     export function IR_KeyValue(value: enIRButton): number {
         return value;
@@ -76,14 +75,12 @@ namespace MbitIR {
 
     
     //% weight=5
-    //% group="micro:bit(V2)"
     //% blockId=IR_readV2 block="read IR key value"
     export function IR_readV2(): number {
         return valuotokeyConversion();
     }
 
     //% weight=2
-    //% group="micro:bit(V2)"
     //% blockId=IR_callbackUserV2 block="on IR received"
     //% draggableParameters
     export function IR_callbackUserV2(cb: (message: number) => void) {

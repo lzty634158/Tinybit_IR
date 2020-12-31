@@ -1,8 +1,8 @@
 /**
- * IR remote common class (Version 0.0.4)
+ * IR receiver (Version 0.0.4)
  *
- * Copyright (C) 2010 Shinichiro Nakamura (CuBeatSystems)
- * http://shinta.main.jp/
+ * Copyright (C) 2020 Yahboom
+ * 
  */
 
 #ifndef _REMOTE_IR_H_

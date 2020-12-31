@@ -1,13 +1,14 @@
 {
     "name": "Tinybit_IR",
-    "version": "1.0.0",
-    "description": "Extension for YahBoom Tinybit_IR V1.0.0",
+    "version": "2.0.0",
+    "description": "Extension for YahBoom Tinybit_IR V2.0.0",
     "license": "MIT",
     "dependencies": {
         "core": "*"
     },
     "files": [
         "MbitIR.ts",
+        "Mbit_IR.ts",
         "enums.d.ts",
         "Mbit_IR.cpp",
         "ReceiverIR.cpp",

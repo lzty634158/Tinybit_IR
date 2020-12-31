@@ -48,12 +48,6 @@ declare const enum RemoteButton {
     Nine = 0x1a,
 }
 
-declare namespace Mbit_IR {
-
-}
-declare namespace MbitIR {
-
-}
 
 
 // Auto-generated. Do not edit. Really.

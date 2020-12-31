@@ -65,8 +65,7 @@ namespace Mbit_IR {
     uint32_t now;
     ReceiverIR *rx;
     RemoteIR::Format fmt = RemoteIR::UNKNOWN;
-    int msg;
-    int IRcallbackNum;
+    
 
     /*
     V2 logic
@@ -75,65 +74,43 @@ namespace Mbit_IR {
     int ir_addr = 0x00;
     int data;
     MicroBitPin* pIRV2_pin = NULL;
-        
 
-    /**
-     * button pushed.
-     */
-    //% blockId=ir_received_left_event
-    //% block="on |%btn| button pressed"
-    void onPressEvent(RemoteButton btn, Action body) {
-        //if(actions.find(btn) == actions.end()) actions[btn] = new vector();
-        IRcallbackNum=(int)btn;
-        actions[btn].push_back(body);
-    }
 
-    void cA(vA runner){
-        for(int i=0;i<runner.size();i++){runAction0(runner[i]);} 
-    }
+    void cA(vA runner){for(int i=0;i<runner.size();i++){runAction0(runner[i]);} }
 
     void onReceivable(){
-
         int x = rx->getData(&fmt, buf, 32 * 8);
-
-        //if(actions.find((RemoteButton)buf[2]) == actions.end()) return;
+        if(actions.find((RemoteButton)buf[2]) == actions.end()) return;
         now = tsb.read_ms();
         if(now - lastact[(RemoteButton)buf[2]] < 100) return;
         lastact[(RemoteButton)buf[2]] = now;
-        msg=(int)buf[2];
-        uBit.serial.send(IRcallbackNum);
-        if(IRcallbackNum < 1){
-            return;
-        }
-        for(int i=1;i<=IRcallbackNum;i++){
-            cA(actions[(RemoteButton)i]);  
-        }    
+        cA(actions[(RemoteButton)buf[2]]);
     }
+
 
     void monitorIR(){
         while(1){
-            while(rx->getState() != ReceiverIR::Received){ 
+        while(rx->getState() != ReceiverIR::Received){
             uBit.sleep(50);
-            }
-            onReceivable();
+        }
+        onReceivable();
         }
     }
 
-    /**
-     * initialises local variablesssss
-     */
-    //% blockId=ir_init
-    //% block="connect ir receiver to %pin"
-    void initIR(Pins pin){
+    //%
+    void init(Pins pin){
         rx = new ReceiverIR((PinName)pin);
         tsb.start(); //interrupt timer for debounce
         create_fiber(monitorIR);
     }
 
-    //% 
-    int getParam(){
-        return msg;
+    //%
+    void onPressEvent(RemoteButton btn, Action body) {
+        actions[btn].push_back(body);
     }
+
+    
+     
   
 
     /****************************************************************************************************
