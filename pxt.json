@@ -1,7 +1,7 @@
 {
     "name": "Tinybit_IR",
-    "version": "2.0.0",
-    "description": "Extension for YahBoom Tinybit_IR V2.0.0",
+    "version": "2.0.1",
+    "description": "Extension for YahBoom Tinybit_IR V2.0.1",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -16,6 +16,7 @@
         "RemoteIR.h",
         "_locales/zh-cn/Mbit_IR-strings.json",
         "_locales/zh-tw/Mbit_IR-strings.json",
+        "_locales/fr/Mbit_IR-strings.json",
         "shims.d.ts",
         "README.md"
     ],

@@ -1,0 +1,34 @@
+{
+    "Mbit_IR.init|block": " Connecter le capteur IR sur la broche %pin",
+    "Mbit_IR.onPressEvent|block": "quand la touche |%btn| est pressée",
+
+    "MbitIR.IR_readV2|block": "Lire la valeur de la touche du capteur IR",
+    "MbitIR.IR_callbackUserV2|block": "quand le capteur IR a reçu m(V2)",
+    "MbitIR.IR_KeyValue|block": "Valeur de la touche du capteur IR|%value",
+
+    "MbitIR.enIRButton.Power|block": "Marche",
+    "MbitIR.enIRButton.Up|block": "Flèche haut",
+    "MbitIR.enIRButton.Light|block": "Lumière",
+    "MbitIR.enIRButton.Left|block": "Flèche gauche",
+    "MbitIR.enIRButton.Beep|block": "Son",
+    "MbitIR.enIRButton.Right|block": "Flèche droite",
+    "MbitIR.enIRButton.SpinLeft|block": "Pivoter à gauche",
+    "MbitIR.enIRButton.Down|block": "Flèche bas",
+    "MbitIR.enIRButton.SpinRight|block": "Pivoter à droite",
+    "MbitIR.enIRButton.Add|block": "Plus",
+    "MbitIR.enIRButton.Zero|block": "Zéro",
+    "MbitIR.enIRButton.Minus|block": "Moins",
+    "MbitIR.enIRButton.One|block": "Un",
+    "MbitIR.enIRButton.Two|block": "Deux",
+    "MbitIR.enIRButton.Three|block": "Trois",
+    "MbitIR.enIRButton.Four|block": "Quatre",
+    "MbitIR.enIRButton.Five|block": "Cinq",
+    "MbitIR.enIRButton.Six|block": "Six",
+    "MbitIR.enIRButton.Seven|block": "Sept",
+    "MbitIR.enIRButton.Eight|block": "Huit",
+    "MbitIR.enIRButton.Nine|block": "Neuf"
+
+  
+ 
+
+}
