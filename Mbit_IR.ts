@@ -15,7 +15,7 @@ namespace Mbit_IR {
     /**
     * initialization
     */
-    //% blockId=Mbit_IR_init
+    //% blockId=init
     //% blockGap=20 weight=90
     //% block="connect ir receiver to %pin"
     //% shim=Mbit_IR::init
@@ -26,7 +26,7 @@ namespace Mbit_IR {
     /**
     * button pushed.
     */
-    //% blockId=Mbit_IR_received_event
+    //% blockId=onPressEvent
     //% blockGap=20 weight=89
     //% block="on |%btn| button pressed"
     //% shim=Mbit_IR::onPressEvent
