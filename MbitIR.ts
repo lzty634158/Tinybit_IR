@@ -65,20 +65,20 @@ namespace MbitIR {
     }
 
     //% weight=5
-    //% blockId=IR_KeyValue block="IR_KeyValue|value %value"
+    //% blockId=MbitIR_IR_KeyValue block="IR_KeyValue|value %value"
     export function IR_KeyValue(value: enIRButton): number {
         return value;
     }
 
     
     //% weight=5
-    //% blockId=IR_readV2 block="read IR key value"
+    //% blockId=MbitIR_IR_readV2 block="read IR key value"
     export function IR_readV2(): number {
         return valuotokeyConversion();
     }
 
     //% weight=2
-    //% blockId=IR_callbackUserV2 block="on IR received"
+    //% blockId=MbitIR_IR_callbackUserV2 block="on IR received"
     //% draggableParameters
     export function IR_callbackUserV2(cb: (message: number) => void) {
         state = 1;

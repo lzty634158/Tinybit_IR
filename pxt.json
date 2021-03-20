@@ -1,7 +1,7 @@
 {
     "name": "Tinybit_IR",
-    "version": "2.0.2",
-    "description": "Extension for YahBoom Tinybit_IR V2.0.2",
+    "version": "2.0.3",
+    "description": "Extension for YahBoom Tinybit_IR V2.0.3",
     "license": "MIT",
     "dependencies": {
         "core": "*"

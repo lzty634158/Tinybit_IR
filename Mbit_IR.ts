@@ -15,9 +15,8 @@ namespace Mbit_IR {
     /**
     * initialization
     */
-    //% blockId=init
+    //% blockId=Mbit_IR_init block="connect ir receiver to %pin"
     //% blockGap=20 weight=90
-    //% block="connect ir receiver to %pin"
     //% shim=Mbit_IR::init
     export function init(pin: Pins): void {
       return
@@ -26,9 +25,8 @@ namespace Mbit_IR {
     /**
     * button pushed.
     */
-    //% blockId=onPressEvent
+    //% blockId=Mbit_IR_onPressEvent block="on |%btn| button pressed"
     //% blockGap=20 weight=89
-    //% block="on |%btn| button pressed"
     //% shim=Mbit_IR::onPressEvent
     export function onPressEvent(btn: RemoteButton, body:Action): void {
       return
